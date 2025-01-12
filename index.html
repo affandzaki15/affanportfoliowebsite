@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Memuat file CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rowdies:wght@300;400;700&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rowdies:wght@300;400;700&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=League+Spartan:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rowdies:wght@300;400;700&display=swap');
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Navigasi -->
+    <header>
+        <nav>
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="logo">Portfolio Website</div>
+            <ul>
+                <li><a href="#index" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#project" class="nav-link">Project</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#skill" class="nav-link">Skill</a></li>
+                <button class="contact-button">Contact Me</button>
+            </ul>
+        </nav>
+    </header>
+    <!-- Section Home -->
+    <section id="index">
+        <div class="home-content">
+            <p>Hello Everyone!</p>
+            <h1>I'm <span id="typing-effect"></span></h1>
+            <h2>Web Developer</h2>
+            <span>Lives in Malang, Indonesia. You can contact me via email affandzakiabrar@gmail.com</span>
+            <div class="buttons">
+                <button class="resume-btn"
+                    onclick="window.open('CV & PORTO AFFAN DZAKI ABRAR.pdf', '_blank');">Resume</button>
+                <button class="projects-btn"
+                    onclick="document.querySelector('#project').scrollIntoView({ behavior: 'smooth' });">Projects</button>
+
+            </div>
+        </div>
+        <div class="image">
+            <img src="image/removed-background.png" alt="Affan Dzaki Abrar">
+        </div>
+    </section>
+
+    <!--section about-->
+    <section id="about">
+        <div class="about-section">
+            <div class="about-header">
+                About Me
+            </div>
+            <div class="about-container">
+                <p>Saya Affan Dzaki Abrar,seorang mahasiswa jurusan matematika di Universitas Negeri Malang. Saya lahir
+                    di
+                    malang pada tanggal 26 Juni 2003. Saya seorang Web Developer yang sedang belajar dalam HTML, CSS,
+                    PHP,
+                    dan JavaScript, dengan keahlian framework Laravel. Selain itu, saya dapat menggunakan database pada
+                    phpMyAdmin dan XAMPP. Saya juga selalu mengasah pengetahuan dan keterampilan teknis seperti problem
+                    solving dengan mengikuti webinar, course, dan bootcamp seputar web developer.</p>
+
+            </div>
+        </div>
+    </section>
+
+    <!--section education-->
+    <section id="education">
+        <div class="education-section">
+            <div class="education-header">
+                Education
+            </div>
+            <div class="education-card">
+                <h3>Universitas Negeri Malang</h3>
+                <p class="major">FMIPA</p>
+                <p class="sub-major">Matematika</p>
+                <div class="details">
+                    <span class="gpa">3.42</span>
+                    <span class="year">2022 – Now</span>
+                </div>
+            </div>
+            <div class="education-card">
+                <h3>SMAN 2 MALANG</h3>
+                <p class="major"></p>
+                <p class="sub-major">MIPA</p>
+                <div class="details">
+                    <span class="gpa">85,93</span>
+                    <span class="year">2018 – 2021</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Section Project-->
+    <section id="project">
+        <div class="project-header">
+            Projects
+        </div>
+        <div class="project-container">
+            <!-- Baris Pertama -->
+            <div class="project-card">
+                <img src="image/Screenshot 2024-12-26 225733.png" alt="Project 1">
+                <h3>Pengelolaan Game Center</h3>
+                <p>Website berisi booking tempat, feedback pengguna, dan informasi rental. Website ini menggunakan
+                    Bahasa PHP serta databasenya menggunakan xampp (phpMyAdmin) untuk memenuhi tugas UAS mata kuliah
+                    pemrograman website.</p>
+                <div class="button-group">
+                    <a href="https://github.com/affandzaki15/PlayStationrentalmanagementsystem" class="github"
+                        target="_blank">GitHub</a>
+                    <a href="#" class="live-demo" target="_blank">Demo Disable</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="image/Screenshot 2025-01-09 173258.png" alt="Project 2">
+                <h3>Media Online Dengan Laravel</h3>
+                <p>Website berisi berita berita dengan framework laravel dengan Bahasa PHP serta database menggunakan
+                    xampp (phpMyAdmin) untuk memenuhi tugas bootcamp web developer yang diselenggarakan oleh nusacodes.
+                </p>
+                <div class="button-group">
+                    <a href="https://github.com/affandzaki15/mediaonlinelaravel" class="github"
+                        target="_blank">GitHub</a>
+                    <a href="#" class="live-demo" target="_blank">Demo Disable</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="image/Screenshot 2025-01-10 202512.png" alt="Project 3">
+                <h3>Marketplace Mini</h3>
+                <p>Website berisi sistem pembelian jersey bola dengan bahasa html, css, dan javascript untuk memenuhi
+                    tugas minicourse yang diselenggarakan oleh dibimbing.id</p>
+                <div class="button-group">
+                    <a href="https://github.com/affandzaki15/LP-Madrid" class="github" target="_blank">GitHub</a>
+                    <a href="https://affandzaki15.github.io/LP-Madrid/" class="live-demo" target="_blank">Live Demo</a>
+                </div>
+            </div>
+            <!-- Baris Kedua -->
+            <div class="project-card">
+                <img src="image/Screenshot 2025-01-10 221948.png" alt="Project 4">
+                <h3>Company Profile</h3>
+                <p>Website berisi informasi mengenai profil dari perusahaan sabikerja.com. Website ini menggunakan
+                    Bahasa HTML, CSS, dan JS untuk memenuhi tugas virtual internship dimana saya ditugaskan untuk
+                    menambah fitur website yang diadakan oleh dibimbing.id yang bekerja sama dengan sabikerja.</p>
+                <div class="button-group">
+                    <a href="https://github.com/affandzaki15/Project-internpro" class="github"
+                        target="_blank">GitHub</a>
+                    <a href="https://affandzaki15.github.io/Project-internpro/" class="live-demo" target="_blank">Live
+                        Demo</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="image/WhatsApp Image 2024-12-19 at 12.01.09_e0772ccf.jpg" alt="Project 5">
+                <h3>Pengelolaan Asrama Mahasiswa</h3>
+                <p>Website berisi pendaftaran, booking kamar, pengajuan keluhan, dan website admin untuk mengelola
+                    system. Website ini menggunakan Bahasa PHP serta databasenya menggunakan xampp (phpMyAdmin) untuk
+                    memenuhi tugas UAS mata kuliah database</p>
+                <div class="button-group">
+                    <a href="https://github.com/affandzaki15/asramamahasiswa" class="github" target="_blank">GitHub</a>
+                    <a href="#" class="live-demo" target="_blank">Demo Disable</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Experience-->
+    <section id="experience" class="expe">
+        <div class="experience-header">
+            experience
+        </div>
+
+        <div class="experience-card">
+            <p class="date">Nov 2024 - Des 2024</p>
+            <h3>Project Based Intern: Fullstack Web Developer</h3>
+            <p><strong>Sabikerja.com</strong></p>
+            <p>• Menonton video pembelajaran dan mengerjakan quiz disetiap chapternya
+            </p>
+            <p>
+                • Mengerjakan website yang telah diarahkan oleh tim UI/UX Perusahaan Sabikerja
+            </p>
+            <a href="INT2024120846.pdf" target="_blank" class="certificate-btn">View Certificate</a>
+        </div>
+
+        <div class="experience-card">
+            <p class="date">Okt 2024 - Nov 2024</p>
+            <h3>Bootcamp Web Developer </h3>
+            <p><strong>Nusacodes</strong></p>
+            <p> • Mengerjakan projek kecil dari materi yang telah dibahas setiap minggunya (total 5 minggu)
+            </p>
+            <p> • Mengerjakan projek besar dengan tema media berita online menggunakan framework laravel
+            </p>
+            <a href="data2.pdf" target="_blank" class="certificate-btn">View Certificate</a>
+        </div>
+    </section>
+
+    <!--skills-->
+    <section id="skill">
+        <div class="experience-header">
+            skills
+        </div>
+        <br> <br> <br>
+        <div class="skills-container">
+            <div class="skill">
+                <img src="image/html-five-svgrepo-com.svg" alt="HTML5">
+                <span class="tooltip">HTML5</span>
+            </div>
+            <div class="skill">
+                <img src="image/css-3-svgrepo-com.svg" alt="CSS3">
+                <span class="tooltip">CSS3</span>
+            </div>
+            <div class="skill">
+                <img src="image/bootstrap-svgrepo-com.svg" alt="Bootstrap">
+                <span class="tooltip">Bootstrap</span>
+            </div>
+            <div class="skill">
+                <img src="image/javascript-svgrepo-com.svg" alt="JavaScript">
+                <span class="tooltip">JavaScript</span>
+            </div>
+            <div class="skill">
+                <img src="image/php-svgrepo-com.svg" alt="React">
+                <span class="tooltip">PHP</span>
+            </div>
+            <div class="skill">
+                <img src="image/laravel-svgrepo-com.svg" alt="React">
+                <span class="tooltip">LARAVEL</span>
+            </div>
+            <div class="skill">
+                <img src="image/github-color-svgrepo-com.svg" alt="React">
+                <span class="tooltip">GITHUB</span>
+            </div>
+        </div>
+    </section>
+    <div id="footer">
+        <p>Copyright © <span class="green-text">Affan Dzaki Abrar 2025</span></p>
+        <div id="social-icons" class="d-flex justify-content-center">
+            <a href="https://www.instagram.com/affan_abrar" class="mx-2" target="_blank"><i class="bi bi-instagram"></i> Instagram</a>
+            <a href="https://www.linkedin.com/in/affandzakiabrar" class="mx-2" target="_blank"><i class="bi bi-linkedin"></i> LinkedIn</a>
+            <a href="https://github.com/affandzaki15/" class="mx-2" target="_blank"><i class="bi bi-github"></i> Github</a>
+          </div>
+    </div>
+
+    <script src="script.js"></script> <!-- Memuat file JavaScript -->
+</body>
+
+</html>
